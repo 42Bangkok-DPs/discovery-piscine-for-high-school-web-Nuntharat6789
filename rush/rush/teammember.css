@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 70px;
+}
+.card{
+    width: 325px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 20px;
+}
+.image-container {
+    text-align: center;
+    color: #191970;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+.image-container h3{
+    margin-top: 12px;
+}

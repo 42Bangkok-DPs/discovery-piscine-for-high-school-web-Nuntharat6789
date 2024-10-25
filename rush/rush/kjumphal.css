@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* a{
+    color: black;
+}
+* li{
+    list-style: none;
+}
+body{
+    background-color: lightcyan;
+}
+header{
+    background-color: skyblue;
+    padding: 30px 0;
+}
+.container{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li a:hover {
+    color: white;
+}
+.bar{
+    display: none;
+}
+
+@media screen and (max-width :900px){
+    .bar{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        margin-top: 350px;
+        border-radius: 5px;
+        border-bottom: solid 1px skyblue;
+        overflow: hidden;
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding: 20px 20px;
+        margin: 0;
+    }
+    nav ul li:hover{
+        background-color: skyblue;
+    }
+    .show{
+        display: flex;
+    }
+}
+.kjumphal{
+    justify-content: center;
+    text-align: center;
+    color: #4f80c0;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.kjumphal img{
+    margin-top: 50px;
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 50px;
+    color: #4f80c0;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 70px;
+}
+.card{
+    width: 325px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card-content{
+    padding: 30px 35px;
+    line-height: 1.3;
+}
+.card-content h1{
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: #a378b5;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card-content img{
+    justify-content: center;
+    margin-top: 10px;  
+}
+.card .information{
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+.card .information h2{
+    margin-top: 40px;
+    color: #4f80c0;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.contact{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.contact i{
+    padding: 20px;
+}
